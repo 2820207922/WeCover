@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>WeCover</title>
+</head>
+
+<body>
+    <script src="scripts/main.js" defer></script>
+    <section id="section" class="section"
+        style="transform: scale(1) !important; opacity: 1 !important; filter: blur(0px) !important;">
+
+        <div class="bg-all">
+            <img id="bg" onerror="this.classList.add('error');" src="https://xhacg.cc/img/background7.webp"
+                style="transform: scale(1); filter: blur(0px); transition: all 1.5s ease 0s;">
+            <div class="cover" style="opacity: 1; transition: all 1.5s ease 0s;"></div>
+        </div>
+
+        <main id="main" class="main">
+
+            <div id="container" class="container">
+                <div class="row" id="row" style="display: flex;">
+                    <div class="col left">
+                        <div class="main-img" id="main-img">
+                            <img id="logo-img" src="images\公众号封面.png" alt="公众号封面" />
+                            <div class="logo-text" id="logo-text">WeCover</div>
+                        </div>
+                        <div class="card" id="cover-list" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="logo cards" style="display: none" id="changemore">
+                        <a class="logo-text" id="logo-text-small">WeCover</a>
+                    </div>
+                    <div class="col right">
+                        <div class="card" id="cover-selected">
+                        </div>
+
+                        <div class="card" id="text-input">
+                            <form class="form-submit">
+                                <div class="input-group">
+                                    <label for="title-input-field">标题</label>
+                                    <input id="title-input-field" type="text" name="title" placeholder="请输入标题" />
+                                </div>
+                                <div class="input-group">
+                                    <label for="text-input-field">文本</label>
+                                    <input id="text-input-field" type="text" name="text" placeholder="请输入文本" />
+                                </div>
+                                <input type="submit" value="生成封面" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </section>
+
+</body>
+
+</html>
