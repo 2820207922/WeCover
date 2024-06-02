@@ -2,53 +2,56 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="styles/style.css" rel="stylesheet" />
-    <title>WeCover</title>
+    <meta charset="UTF-8"> <!-- 设置文档字符编码 -->
+    <meta name="viewport" content="width=device-width"> <!-- 设置视口宽度以适应不同设备 -->
+    <link href="styles/style.css" rel="stylesheet" /> <!-- 引入 CSS 样式文件 -->
+    <title>WeCover</title> <!-- 设置网页标题 -->
 </head>
 
 <body>
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/main.js" defer></script> <!-- 引入 JavaScript 文件，使用 defer 属性使其在文档解析完毕后再执行 -->
     <section id="section" class="section"
         style="transform: scale(1) !important; opacity: 1 !important; filter: blur(0px) !important;">
+        <!-- 设置 section 的样式 -->
 
-        <div class="bg-all">
+        <div class="bg-all"> <!-- 背景层 -->
             <img id="bg" onerror="this.classList.add('error');" src="https://xhacg.cc/img/background7.webp"
-                style="transform: scale(1); filter: blur(0px); transition: all 1.5s ease 0s;">
-            <div class="cover" style="opacity: 1; transition: all 1.5s ease 0s;"></div>
+                style="transform: scale(1); filter: blur(0px); transition: all 1.5s ease 0s;"> <!-- 背景图片 -->
+            <div class="cover" style="opacity: 1; transition: all 1.5s ease 0s;"></div> <!-- 覆盖层 -->
         </div>
 
-        <main id="main" class="main">
+        <main id="main" class="main"> <!-- 主内容区 -->
 
-            <div id="container" class="container">
-                <div class="row" id="row" style="display: flex;">
-                    <div class="col left">
-                        <div class="main-img" id="main-img">
-                            <img id="logo-img" src="images\公众号封面.png" alt="公众号封面" />
-                            <div class="logo-text" id="logo-text">WeCover</div>
+            <div id="container" class="container"> <!-- 容器 -->
+                <div class="row" id="row" style="display: flex;"> <!-- 行 -->
+                    <div class="col left"> <!-- 左列 -->
+                        <div class="main-img" id="main-img"> <!-- 主图像 -->
+                            <img id="logo-img" src="images\公众号封面.png" alt="公众号封面" /> <!-- logo 图像 -->
+                            <div class="logo-text" id="logo-text">WeCover</div> <!-- logo 文本 -->
                         </div>
-                        <div class="card" id="cover-list" style="display: none;">
+                        <div class="card" id="cover-list" style="display: none;"> <!-- 封面列表 -->
                         </div>
                     </div>
-                    <div class="logo cards" style="display: none" id="changemore">
-                        <a class="logo-text" id="logo-text-small">WeCover</a>
+                    <div class="logo cards" style="display: none" id="changemore"> <!-- 更多 logo -->
+                        <a class="logo-text" id="logo-text-small">WeCover</a> <!-- logo 文本 -->
                     </div>
-                    <div class="col right">
-                        <div class="card" id="cover-selected">
+                    <div class="col right"> <!-- 右列 -->
+                        <div class="card" id="cover-selected"> <!-- 选中的封面 -->
                         </div>
 
-                        <div class="card" id="text-input">
-                            <form class="form-submit">
-                                <div class="input-group">
-                                    <label for="title-input-field">标题</label>
+                        <div class="card" id="text-input"> <!-- 文本输入区 -->
+                            <form class="form-submit"> <!-- 提交表单 -->
+                                <div class="input-group"> <!-- 输入组 -->
+                                    <label for="title-input-field">标题</label> <!-- 标题标签 -->
                                     <input id="title-input-field" type="text" name="title" placeholder="请输入标题" />
+                                    <!-- 标题输入框 -->
                                 </div>
-                                <div class="input-group">
-                                    <label for="text-input-field">文本</label>
+                                <div class="input-group"> <!-- 输入组 -->
+                                    <label for="text-input-field">文本</label> <!-- 文本标签 -->
                                     <input id="text-input-field" type="text" name="text" placeholder="请输入文本" />
+                                    <!-- 文本输入框 -->
                                 </div>
-                                <input type="submit" value="生成封面" />
+                                <input type="submit" value="生成封面" /> <!-- 提交按钮 -->
                             </form>
                         </div>
                     </div>
